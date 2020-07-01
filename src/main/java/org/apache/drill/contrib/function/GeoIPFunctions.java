@@ -38,7 +38,7 @@ public class GeoIPFunctions {
   private GeoIPFunctions() {
   }
 
-  @FunctionTemplate(name = "getCountryName", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getCountryName", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
 
   public static class getCountryNameFunction implements DrillSimpleFunc {
 
@@ -81,7 +81,7 @@ public class GeoIPFunctions {
   }
 
 
-  @FunctionTemplate(name = "getCountryISOCode", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getCountryISOCode", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getCountryISOFunction implements DrillSimpleFunc {
 
     @Param
@@ -122,7 +122,7 @@ public class GeoIPFunctions {
   }
 
 
-  @FunctionTemplate(name = "getCountryConfidence", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getCountryConfidence", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getCountryConfidenceFunction implements DrillSimpleFunc {
 
     @Param
@@ -157,7 +157,7 @@ public class GeoIPFunctions {
   }
 
 
-  @FunctionTemplate(name = "getCityName", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getCityName", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
 
   public static class getCityNameFunction implements DrillSimpleFunc {
 
@@ -197,7 +197,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getCityConfidence", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getCityConfidence", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
 
   public static class getCityConfidenceFunction implements DrillSimpleFunc {
 
@@ -231,7 +231,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getLatitude", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getLatitude", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getLatitudeFunction implements DrillSimpleFunc {
 
     @Param
@@ -269,7 +269,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getLongitude", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getLongitude", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getLongitudeFunction implements DrillSimpleFunc {
 
     @Param
@@ -307,7 +307,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getTimezone", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getTimezone", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getTimezoneFunction implements DrillSimpleFunc {
 
     @Param
@@ -350,7 +350,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getAccuracyRadius", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getAccuracyRadius", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getAccuracyRadiusFunction implements DrillSimpleFunc {
 
     @Param
@@ -388,7 +388,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getAverageIncome", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getAverageIncome", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getAverageIncomeFunction implements DrillSimpleFunc {
 
     @Param
@@ -423,7 +423,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getMetroCode", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getMetroCode", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getMetroCodeFunction implements DrillSimpleFunc {
 
     @Param
@@ -458,7 +458,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getPopulationDensity", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getPopulationDensity", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getPopulationDensityFunction implements DrillSimpleFunc {
 
     @Param
@@ -490,7 +490,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(names = {"isEU", "isEuropeanUnion"}, scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(names = {"UDF_isEU", "UDF_isEuropeanUnion"}, scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class isEUFunction implements DrillSimpleFunc {
 
     @Param
@@ -524,7 +524,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getPostalCode", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getPostalCode", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getPostalCodeFunction implements DrillSimpleFunc {
 
     @Param
@@ -568,7 +568,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getCoordPoint", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getCoordPoint", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getCoordPointFunction implements DrillSimpleFunc {
 
     @Param
@@ -615,7 +615,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getASN", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getASN", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getASNFunction implements DrillSimpleFunc {
 
     @Param
@@ -644,7 +644,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "getASNOrganization", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_getASNOrganization", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class getASNOrgFunction implements DrillSimpleFunc {
 
     @Param
@@ -679,7 +679,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "isAnonymous", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_isAnonymous", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class isAnonymousFunction implements DrillSimpleFunc {
 
     @Param
@@ -713,7 +713,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "isAnonymousVPN", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_isAnonymousVPN", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class isAnonymousVPNFunction implements DrillSimpleFunc {
 
     @Param
@@ -747,7 +747,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "isHostingProvider", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_isHostingProvider", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class isHostingProviderFunction implements DrillSimpleFunc {
 
     @Param
@@ -781,7 +781,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "isPublicProxy", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_isPublicProxy", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class isPublicProxyFunction implements DrillSimpleFunc {
 
     @Param
@@ -815,7 +815,7 @@ public class GeoIPFunctions {
     }
   }
 
-  @FunctionTemplate(name = "isTORExitNode", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
+  @FunctionTemplate(name = "UDF_isTORExitNode", scope = FunctionTemplate.FunctionScope.SIMPLE, nulls = FunctionTemplate.NullHandling.NULL_IF_NULL)
   public static class isTORFunction implements DrillSimpleFunc {
 
     @Param
