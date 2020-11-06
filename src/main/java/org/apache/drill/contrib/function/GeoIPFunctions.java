@@ -60,17 +60,17 @@ public class GeoIPFunctions {
 
     public void eval() {
       String ip = org.apache.drill.exec.expr.fn.impl.StringFunctionHelpers.toStringFromUTF8(inputTextA.start, inputTextA.end, inputTextA.buffer);
-      String countryName = "Unknown";
+      String countryName = "";
 
       try {
         com.maxmind.geoip2.model.CountryResponse country = reader.country(java.net.InetAddress.getByName(ip));
 
         countryName = country.getCountry().getName();
         if (countryName == null) {
-          countryName = "Unknown";
+          countryName = "";
         }
       } catch (Exception e) {
-        countryName = "Unknown";
+        countryName = "";
       }
 
       out.buffer = buffer;

@@ -28,7 +28,7 @@
   <artifactId>drill-geoip-functions</artifactId>
   <version>${my.version}</version>
   <properties>
-    <my.version>1.0</my.version>
+    <my.version>1.1</my.version>
   </properties>
 
   <dependencies>
